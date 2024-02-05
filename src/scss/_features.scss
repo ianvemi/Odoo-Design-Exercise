@@ -1,0 +1,195 @@
+//CUSTOM HEADER STYLES
+@use "../scss/custom" as *;
+
+.info-container {
+    margin-bottom: 7%;
+    margin-top: 13%;
+}
+
+.features {
+    .tools-container {
+        padding-bottom: 1rem;
+        .card-bg {
+            position: relative;
+            border: none;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+.tools {
+    background-image: url("../../img/img_01.jpg");
+    overflow: hidden;
+
+    .overlay {
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: $white;
+        opacity: 0;
+        transition:
+            top 0.5s ease-in-out,
+            opacity 0.5s ease-in-out; 
+        margin-top: 25%;
+        padding: 2.5rem;
+        padding-top: 1rem;
+    }
+
+    .progress-bar {
+        background-color: $yellow;
+    }
+ 
+}
+
+.features-img{
+    background-image: url("../../img/img_02.jpg");
+}
+
+.install-img{
+    background-image: url("../../img/img_03.jpg");
+}
+
+.tech-img{
+    background-image: url("../../img/person_03.jpg");
+}
+
+.info-l{
+    padding-left: 15%;
+}
+
+.info-r{
+    padding-right: 15%;
+}
+
+.label-card{
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    color: $white;
+    
+}
+
+
+.apps{
+    img{
+        &:hover{
+            transform: scale(1.05);
+            transition: all 0.3s;
+        }
+    }
+}
+
+.card {
+    &:hover {
+        .overlay {
+            transition: all 0.5s ease;
+            top: 0; 
+            margin-top: 25%;
+
+            opacity: 1;
+        }
+    }
+}
+
+.card-bg-tech {
+    position: relative;
+    border: none;
+    height: 340px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:auto;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    font-size: 14px; 
+    margin-right: 1rem;
+}
+
+.company-circle {
+    width:60px; 
+    height: 60px; 
+    background-image: url("../../img/company_01.png");
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.people{
+    margin-top: 1rem;
+}
+.person-circle{
+    width:40px; 
+    height: 40px; 
+    border: 2px solid $white;
+    margin: -6px;
+}
+
+.person-circle-1 {
+    background-image: url("../../img/person_01.jpg");
+}
+
+.person-circle-2 {
+    background-image: url("../../img/person_02.jpg");
+}
+
+.person-circle-3 {
+    background-image: url("../../img/person_03.jpg");
+}
+
+.actions-kit{
+    padding-top: 1rem;
+    background-color: #ffffff; 
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height:1.5px; 
+        background: linear-gradient(to right, transparent, #c5c5c5, transparent); 
+        transform: scaleY(1);
+}
+
+i{
+    &:hover{
+        cursor: pointer;
+        color: $blue;
+        transition: all 0.2s;
+        transform: scale(1.07);
+    
+}
+
+}
+}
+
+.row{
+    --bs-gutter-x: none;
+    --bs-gutter-y: none;
+}
+
+
+
+.arrow-div{
+    margin-bottom: -15%;
+    margin-top: -10%;
+    margin-left: 30%;
+    z-index: -10;
+}
+
+.arrow-div-2{
+    margin-bottom: -15%;
+    margin-top: -10%;
+    z-index: -10;
+
+}

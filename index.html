@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odoo Design Challenge - Ian</title>
+
+  <link rel="stylesheet" href="build/css/style.css" />
+  <link href="https://fonts.cdnfonts.com/css/cedora" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <header class="header container-fluid">
+    <nav class="navbar container-sm pt-4 pb-4">
+      <div class="col-lg-3 col-xl-4">
+        <a href=""><img src="img/odoo-white.svg" class="logo" alt="Odoo" /></a>
+      </div>
+      <div class="col-lg-6 col-xl-4">
+        <div class="row">
+          <div class="col text-center"><a href="#">Home</a></div>
+          <div class="col text-center"><a href="#">Products</a></div>
+          <div class="col text-center"><a href="#">Pages</a></div>
+          <div class="col text-center"><a href="#">Apps</a></div>
+          <div class="col text-center"><a href="#">Docs</a></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-xl-4">
+        <div class="row justify-content-end">
+          <button class="btn col-auto b1">Sign in</button>
+          <button class="btn btn-secondary col-auto b-header">
+            <i class="fa-solid fa-bag-shopping text-primary"></i>Buy now
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-sm">
+      <div class="intro row align-items-center">
+        <div class="col col-lg-5 col-xl-6">
+          <h1 class="display-4 text-secondary mb-4">
+            Development <br />done right
+          </h1>
+          <p class="text-secondary mb-5">
+            Build a beautiful, modern website with <br />
+            flexible components built from scratch.
+          </p>
+          <button class="btn btn-secondary col-auto b-white">
+            Get started <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="trusted row mt-5">
+            <div class="col-auto text-secondary pe-2"><span>Trusted by:</span></div>
+            <div class="col"><img class="img-fluid pe-3" src="./img/google-white.svg" /></div>
+            <div class="col"><img class="img-fluid pe-3" src="./img/spotify-white.svg" /></div>
+            <div class="col"><img class="img-fluid pe-3" src="./img/airbnb-white.svg" /></div>
+            <div class="col"><img  class="img-fluid pe-3" src="./img/paypal-white.svg" /></div>
+          </div>
+        </div>
+        <div class="col col-lg-7 col-xl-6">
+          <div class="card-container row justify-content-end">
+            <div class="card-box">
+              <div class="card p-4 border-r">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <p class="text-primary fw-bold">Manage cards</p>
+                  </div>
+                  <div class="col-auto">
+                    <button class="btn b-card"><span>Add new</span></button>
+                  </div>
+                </div>
+
+                <div class="card-component card mt-4 p-4">
+                  <div class="row">
+                    <div class="col"><img src="./img/mastercard.svg" /></div>
+                    <div class="col-auto">
+                      <button class="btn status-card">
+                        <span>Active</span>
+                      </button>
+                    </div>
+                    <span class="col-12 text-secondary mt-3 card-text">CARD NUMBER</span>
+                    <div class="row">
+                      <p class="text-secondary fs-5 mt-2 mb-4 card-number">
+                        4358 - 7421- 9256 - 6682
+                      </p>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <span class="text-secondary card-text">NAME</span>
+                        <p class="text-secondary fs-6 mt-1">Walter White</p>
+                      </div>
+                      <div class="col">
+                        <span class="text-secondary card-text">EXPIRY DATE</span>
+                        <p class="text-secondary fs-6 mt-1">11/24</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col orders">
+                  <div class="row mt-3 justify-content-end c-item pb-3">
+                    <div class="col order">
+                      <p class="fw-bold">Starbucks</p>
+                      <span class="text-muted card-text">Pending - San Francisco, United States</span>
+                    </div>
+                    <div class="col-auto order">
+                      <p class="text-primary fw-bold">$5,50 USD</p>
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 justify-content-end c-item pb-3 mb-2">
+                    <div class="col order">
+                      <p class="fw-bold">Nike Sports</p>
+                      <span class="text-muted card-text">Pending - Lisbon, Portugal</span>
+                    </div>
+                    <div class="col-auto order">
+                      <p class="text-primary fw-bold">$129,00 USD</p>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <a href="#" class="a-all">View all<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="splitter-1"></div>
+  <main class="features container-fluid">
+
+    <div class="container-sm info-container">
+      <div class="row tools-container">
+        <div class="col">
+          <div class="card card-bg tools">
+            <button class="btn btn-secondary col-auto b-header b-video">
+              Play video <i class="fa-solid fa-play"></i>
+            </button>
+            <div class="overlay  shadow" id="overlay">
+              <div class="col">
+                <h5 class="fw-bold text-primary pb-3 pt-2">Awesome projects</h3>
+                  <div class="row">
+                    <div class="col">
+                      <div class="fw-bold text-primary pb-3 pt-2">Create the new logo</div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="fw-bold text-primary pb-3 pt-2">1:00 <i class="fa-solid fa-chevron-right"
+                          style="font-size: 11px;"></i> </div>
+                    </div>
+                  </div>
+                  <div class="progress" style="height:5px;">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="10"
+                      aria-valuemin="0" aria-valuemax="100" style="width:10%;">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="fw-bold text-primary pb-3 pt-2">Set up the color palette</div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="fw-bold text-primary pb-3 pt-2">3:06 <i class="fa-solid fa-chevron-right"
+                          style="font-size: 11px;"></i> </div>
+                    </div>
+                  </div>
+
+                  <div class="progress" style="height:5px;">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="30"
+                      aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="fw-bold text-primary pb-3 pt-2">Wireframe and prototype</div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="fw-bold text-primary pb-3 pt-2">5:06 <i class="fa-solid fa-chevron-right"
+                          style="font-size: 11px;"></i> </div>
+                    </div>
+                  </div>
+                  <div class="progress" style="height:5px;">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60"
+                      aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row align-items-center h-100 info-card info-l">
+            <div class="col">
+              <span class="label label-card l-y">Tools</span>
+              <h3 class="text-primary fs-2 fw-bold mt-4 mb-4">We build for designers and developers</h3>
+              <p class="text-muted lh-lg">Get components and examples, including tons of variables that will help you
+                grow your business.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-sm arrow-div">
+      <div class="row align-self-center">
+        <div class="col arrow-box">
+          <img src="./img/a(2).png" style="width: 120px;">
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="container-sm info-container">
+      <div class="row tools-container">
+        <div class="col">
+          <div class="row align-items-center h-100 info-card info-r">
+            <div class="col">
+              <span class="label label-card l-g">Features</span>
+              <p class="text-primary fw-bold lh-lg mt-4">Get components and examples, including tons of variables that
+                will help you grow your business.</p>
+              <p class="f-g fw-bold lh-lg mt-5"><i class="fa-solid fa-square-check"></i> Perfect for modern startups</p>
+              <p class="f-g fw-bold lh-lg mt-1"><i class="fa-solid fa-square-check"></i> Fully customizable and scalable
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-bg features-img">
+            <button class="btn btn-secondary col-auto b-header b-video-l">
+              Play video <i class="fa-solid fa-play"></i>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-sm arrow-div-2">
+      <div class="row align-self-center">
+        <div class="col d-flex justify-content-end arrow-box" style="margin-right: 30%;">
+          <img src="./img/a(1).png" style="width: 120px;">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-sm info-container">
+      <div class="row tools-container">
+        <div class="col">
+          <div class="row align-items-center">
+            <div class="col tech-card me-3">
+              <div class="card card-bg-tech tech-img ">
+
+                <div class="row h-100 align-items-end shadow jimmy">
+                  <div class="row l-w p-3 align-items-center">
+                    <div class="col-auto circle l-y">JH</div>
+                    <div class="col fw-bold">Jimmy Hendrix</div>
+                    <div class="col-auto"><i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="card mt-4  shadow">
+                <div class="row l-w p-3 align-items-center">
+                  <div class="col-auto circle l-g"><i class="fa-solid fa-check"></i></div>
+                  <div class="col">
+                    <div class="row fw-bold">300+ components </div>
+                    <div class="row text-muted">
+                      <p>Built to be customized</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="card shadow align-items-center pt-5 pb-5">
+                  <div class="row mb-3"><img src="./img/airbnb.svg" style="width: 100px;"></div>
+                  <div class="row mb-3">
+                    <div class="col"><i class="fa-regular fa-star f-y"></i></div>
+                    <div class="col"><i class="fa-regular fa-star f-y"></i></div>
+                    <div class="col"><i class="fa-regular fa-star f-y"></i></div>
+                    <div class="col"><i class="fa-regular fa-star f-y"></i></div>
+                    <div class="col"><i class="fa-regular fa-star text-muted"></i></div>
+                  </div>
+                  <div class="row text-primary fw-bold">4.95 out of 5 stars</div>
+                  <div class="row text-muted">from 23 reviews</div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="card shadow align-items-center pt-5 pb-5">
+                  <div class="row mb-3 circle company-circle l-b"></div>
+                  <div class="row mb-3">
+
+                  </div>
+                  <div class="row text-primary fw-bold">Website UI Kit</div>
+                  <div class="row people">
+                    <div class="col">
+                      <div class="row mb-3 circle company-circle person-circle person-circle-1"></div>
+                    </div>
+                    <div class="col">
+                      <div class="row mb-3  circle company-circle person-circle person-circle-2"></div>
+                    </div>
+                    <div class="col">
+                      <div class="row mb-3 circle company-circle person-circle person-circle-3"></div>
+                    </div>
+                  </div>
+
+                  <div class="row actions-kit">
+                    <div class="col me-3 ms-3"> <i class="fa-solid fa-paperclip"></i></div>
+                    <div class="col me-3 ms-3"> <i class="fa-regular fa-eye"></i></div>
+                    <div class="col me-3 ms-3"> <i class="fa-regular fa-heart"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+        <div class="col">
+          <div class="row align-items-center h-100 info-card info-l">
+            <div class="col">
+              <span class="label label-card l-b">Technology</span>
+              <h3 class="text-primary fs-2 fw-bold mt-4 mb-4">We use the latest technologies on the market</h3>
+              <p class="text-muted lh-lg mt-4 mb-4">Get components and examples, including tons of variables that will
+                help you grow your business.
+              </p>
+
+              <a href="#" class="a-all">See case studies</a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-sm arrow-div">
+      <div class="row align-self-center">
+        <div class="col arrow-box">
+          <img src="./img/a(2).png" style="width: 120px;">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-sm info-container">
+      <div class="row tools-container">
+        <div class="col">
+          <div class="row align-items-center h-100 info-card info-r">
+            <div class="col">
+              <span class="label label-card l-y">Easy to install</span>
+              <h3 class="text-primary fs-2 fw-bold mt-4 mb-4">Download, install and run.</h3>
+              <p class="text-muted lh-lg mt-4 mb-4">Get components and examples, including tons of variables that will
+                help you grow your business.
+              </p>
+
+              <div class="row apps">
+                <div class="col">
+                  <a href="#"><img style="width: 170px;" src="./img/appstore.png"></a>
+
+                </div>
+                <div class="col">
+                  <a href="#"><img style="width: 170px;" src="./img/playstore.png"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-bg install-img">
+            <button class="btn btn-secondary col-auto b-header b-video-l">
+              Play video <i class="fa-solid fa-play"></i>
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section>
+    <div class="container-sm bg-primary p-5 mb-5  banner">
+
+      <div class="row">
+        <div class="col pb-4 pt-4">
+          <h3 class="text-secondary">Infinite solutions</h3>
+          <p class="text-secondary">Intuitive markup, powerful and lightning-fast build tools,
+            everything you need to turn your ideas into incredible products.
+          </p>
+        </div>
+        <div class="col d-flex justify-content-end align-items-center">
+          <button class="btn btn-secondary col-auto b-white">
+            Learn more <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="awards">
+    <div class="container-sm  p-5 pb-3">
+      <div class="row-auto"><span class="label label-card l-b">Awards</span></div>
+      <div class="row">
+        <p class="text-primary fw-bold mt-3">Awards for design, creativity, and innovation on the Internet</p>
+      </div>
+    </div>
+
+    <div class="container-fluid ">
+      <div class="row align-items-center justify-content-center awards-box mt-5 mb-5">
+        <div class="col">
+          <div class="row me-2">
+            <div class="card shadow align-items-center pt-5 pb-5 award-card">
+              <div class="row mb-3"><img src="./img/airbnb.svg" style="width: 100px;"></div>
+              <div class="row mb-3">
+                <div class="col"><i class="fa-regular fa-star f-y"></i></div>
+                <div class="col"><i class="fa-regular fa-star f-y"></i></div>
+                <div class="col"><i class="fa-regular fa-star f-y"></i></div>
+                <div class="col"><i class="fa-regular fa-star f-y"></i></div>
+                <div class="col"><i class="fa-regular fa-star text-muted"></i></div>
+              </div>
+              <div class="row text-primary fw-bold">4.95 out of 5 stars</div>
+              <div class="row text-muted">from 23 reviews</div>
+            </div>
+          </div>
+        </div>
+        <div class="col align-self-start">
+          <div class="row me-2">
+            <div class="card shadow align-items-center pt-5 pb-5 award-card">
+              <div class="row mb-3"><img src="./img/amazon.svg" style="width: 100px;"></div>
+              <div class="row text-muted text-center ps-4 pe-4">They build modern-looking websites easily using Tabs.
+              </div>
+              <a href="#" class="a-all text-primary fw-bold mt-3">Learn more</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col align-self-center">
+          <div class="row me-2">
+            <div class="card shadow align-items-center pt-5 pb-5 award-card">
+              <div class="row mb-3"><img src="./img/slack.svg" style="width: 100px;"></div>
+              <div class="row text-muted text-center ps-4 pe-4">They build modern-looking websites easily using Trello.
+              </div>
+              <a href="#" class="a-all text-primary fw-bold mt-3">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col align-self-start">
+          <div class="row me-2">
+            <div class="card shadow align-items-center pt-5 pb-5 award-card">
+              <div class="row mb-3"><img src="./img/spotify.svg" style="width: 100px;"></div>
+              <div class="row mb-3">
+                <div class="col"><i class="fa-regular fa-star f-y"></i></div>
+                <div class="col"><i class="fa-regular fa-star f-y"></i></div>
+                <div class="col"><i class="fa-regular fa-star f-y"></i></div>
+                <div class="col"><i class="fa-regular fa-star f-y"></i></div>
+                <div class="col"><i class="fa-regular fa-star text-muted"></i></div>
+              </div>
+              <div class="row text-primary fw-bold">4.95 out of 5 stars</div>
+              <div class="row text-muted">from 23 reviews</div>
+            </div>
+          </div>
+        </div>
+        <div class="col align-self-center">
+          <div class="row me-2">
+            <div class="card shadow align-items-center pt-5 pb-5 award-card">
+              <div class="row mb-3"><img src="./img/paypal.svg" style="width: 100px;"></div>
+              <div class="row text-muted text-center ps-4 pe-4">They build modern-looking websites easily using Trello.
+              </div>
+              <a href="#" class="a-all text-primary fw-bold mt-3">Learn more</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <div class="container-sm mt-5 mb-5">
+    <div class="col">
+      <h3 class="text-primary fs-2 fw-bold mt-4 mb-4 text-center">Helpful answers</h3>
+      <p class="text-muted  mt-3 text-center text-muted">Start building fast, beautiful, and modern-looking websites in
+        no time.</p>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col me-4">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item shadow mb-3 mt-3 ">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <i class="fa-regular fa-file me text-primary me-3"></i> Which license do I need?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-muted">Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <div class="accordion-item shadow mb-3 mt-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <i class="fa-solid fa-lock me-3 text-primary"></i> How do I get access to my database?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-muted">Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item shadow mb-3 mt-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <i class="fa-regular fa-folder me-3 text-primary"></i> How do I see previous orders?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-muted">Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing
+                more exciting happening here in terms of content, but just filling up the space to make it look, at
+                least at first glance, a bit more representative of how this would look in a real-world application.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col  ms-4">
+        <div class="col">
+          <div class="accordion accordion-flush" id="accordionFlush2">
+            <div class="accordion-item shadow mb-3 mt-3 ">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  <i class="fa-regular fa-file me text-primary me-3"></i> Which license do I need?
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlush2">
+                <div class="accordion-body text-muted">Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div class="accordion-item shadow mb-3 mt-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  <i class="fa-solid fa-lock me-3 text-primary"></i> How do I get access to my database?
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlush2">
+                <div class="accordion-body text-muted">Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                  imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item shadow mb-3 mt-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-primary" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                  <i class="fa-regular fa-folder me-3 text-primary"></i> How do I see previous orders?
+                </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlush2">
+                <div class="accordion-body text-muted">Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing
+                  more exciting happening here in terms of content, but just filling up the space to make it look, at
+                  least at first glance, a bit more representative of how this would look in a real-world application.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <p class="mt-5 text-center text-primary fw-bold fs-5">I want to start a new project.</p>
+      <div class="col d-flex justify-content-center ">
+        <button class="btn btn-secondary col-auto b-white l-b f-w me-2 mt-4">
+          Buy now <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="btn btn-secondary col-auto b-white l-w f-d me-2 mt-4">
+          Learn more
+        </button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="splitter-2"></div>
+  <footer class="l-c pt-5 pb-4">
+    <div class="container-sm">
+      <div class="row pb-5">
+        <div class="col">
+          <h3 class="f-w  mt-4 mb-3 ">Brilliant solutions for your ideas</h3>
+          <p class="f-w">Start building fast, beautiful, and modern-looking websites in no time.</p>
+        </div>
+        <div class="col">
+          <div class="col d-flex justify-content-center ">
+            <button class="btn btn-secondary col-auto b-white l-w f-d me-3 mt-4">
+              <i class="fa-regular fa-file-lines me-1"></i> Documentation
+            </button>
+            <button class="btn btn-secondary col-auto b-white l-b f-w ms-3 mt-4">
+              Purchase now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5 pb-5 f1 pt-5">
+        <div class="col-4 ">
+          <img src="./img/odoo-white.svg" style="width: 90px;" alt="Odoo" class="mb-4" />
+          <p class="f-wf f-text">Odoo attempts to bring the best development experience to designers and developers by
+            offering the tools needed for having a quick and solid start in most web projects.</p>
+          <div class="row d-flex  align-items-start mt-4">
+            <div class="col-auto me-3 ms-2"><i class="fa-brands fa-instagram f-w"></i></div>
+            <div class="col-auto me-3 ms-2"><i class="fa-brands fa-github f-w"></i></div>
+            <div class="col-auto me-3 ms-2"><i class="fa-brands fa-facebook f-w"></i></div>
+            <div class="col-auto me-3 ms-2"><i class="fa-solid fa-globe f-w"></i></div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="row w-100 justify-content-center ">
+            <div class="col footer-m ps-5 pe-5 ms-5">
+              <h5 class="f-w mb-4">Account</h5>
+              <a href="#">
+                <p class="f-wf mb-2">Profile</p>
+              </a>
+              <a href="#">
+                <p class="f-wf mb-2">Settings</p>
+              </a>
+              <a href="#">
+                <p class="f-wf mb-2">Billing</p>
+              </a>
+              <a href="#">
+                <p class="f-wf mb-2">Notifications</p>
+              </a>
+            </div>
+            <div class="col  footer-m ps-5 pe-5">
+              <div class="column">
+                <h5 class="f-w mb-4">About</h5>
+                <a href="#">
+                  <p class="f-wf mb-2">Services</p>
+                </a>
+                <a href="#">
+                  <p class="f-wf mb-2">Pricing</p>
+                </a>
+                <a href="#">
+                  <p class="f-wf mb-2">Contact</p>
+                </a>
+                <a href="#">
+                  <p class="f-wf mb-2">Careers</p>
+                </a>
+              </div>
+            </div>
+            <div class="col  footer-m ps-5 pe-5">
+              <div class="column">
+                <h5 class="f-w mb-4">Company</h5>
+                <a href="#">
+                  <p class="f-wf mb-2">Community</p>
+                </a>
+                <a href="#">
+                  <p class="f-wf mb-2">Help center</p>
+                </a>
+                <a href="#">
+                  <p class="f-wf mb-2">Support</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="container-sm f1 pt-4">
+        <div class="row">
+          <div class="col">
+            <p class="f-wf f-text"><b class="f-w">© Odoo.</b> All rights reserved</p>
+          </div>
+          <div class="col-auto">
+            <div class="row w-100 justify-content-center align-items-center">
+              <div class="col-auto me-3"> <a href="#">
+                  <p class="f-wf mb-2 f-text">Terms</p>
+                </a></div>
+              <div class="col-auto me-3"> <a href="#">
+                  <p class="f-wf mb-2 f-text">Privacy</p>
+                </a></div>
+              <div class="col-auto me-3"> <a href="#">
+                  <p class="f-wf mb-2 f-text">Cookies</p>
+                </a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  </footer>
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/edbc8915a2.js" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+
+</html>

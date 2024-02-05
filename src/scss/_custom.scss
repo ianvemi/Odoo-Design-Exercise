@@ -1,0 +1,165 @@
+// CUSTOM SCSS
+
+//Colors
+$blue: #048aff;
+$deepCove: #11295a;
+$yellow: #febd3d;
+$green: #56cbaa;
+$white: #fff;
+
+$purple-card: #11295a;
+
+
+//Fonts
+$font: "Cedora", sans-serif;
+
+// Override Bootstrap variables
+$success: $green;
+$primary: $deepCove;
+$secondary: $white;
+
+$accordion-button-bg:                     $white;
+$accordion-button-active-bg:              $white;
+$accordion-button-active-color:           $white;
+
+$display-font-weight: bold;
+
+// Import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//General styles
+* {
+    font-family: $font;
+}
+
+p{
+    margin: 0;
+}
+
+span{
+    font-size: 0.88rem;
+}
+
+button {
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.3s;
+    }
+}
+
+.card{
+    border-radius: 12px;
+    border: none;
+}
+
+.container-fluid{
+    overflow: hidden;
+}
+
+a{
+   p{
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0);
+    &:hover{
+        border-bottom: 0.5px solid white;
+    }
+}
+   } 
+
+//Buttons
+.b1 {
+    color: $white;
+    margin-right: 1rem;
+    &:hover {
+        border: 1px solid $white;
+        color: $white;
+    }
+}
+
+.b-header {
+    font-weight: bold;
+    i {
+        margin-right: 0.5rem;
+    }
+}
+
+.b-card {
+    font-weight: bold;
+    border: 2px solid rgb(212, 212, 212);
+    font-size: 0.9rem;
+    &:hover {
+        border: 2px solid rgb(212, 212, 212); 
+    }
+}
+
+.b-white {
+    font-weight: bold;
+    padding: 0.9rem 1.5rem;
+    i {
+        margin-left: 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+.b-video{
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    margin: 5%; 
+
+    .fa-play{
+        margin-left: 0.5rem;
+    }
+}
+
+.b-video-l{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    margin: 5%; 
+
+    .fa-play{
+        margin-left: 0.5rem;
+    }
+}
+
+
+//Background colors
+.l-y{
+    background-color: $yellow;
+}
+.l-g{
+    background-color: $green;
+}
+.l-b{
+    background-color: $blue;
+}
+
+.l-w{
+    background-color: $white;
+}
+
+.l-d{
+    background-color: #000000;
+}
+
+.l-c{
+    background-color: $deepCove;
+}
+//Font colors
+.f-y{
+    color: $yellow;
+}
+.f-g{
+    color: $green;
+}
+.f-b{
+    color: $blue;
+}
+
+.f-w{
+    color: $white;
+}
+
+.f-wf{
+    color: rgba(255, 255, 255, 0.699);
+}

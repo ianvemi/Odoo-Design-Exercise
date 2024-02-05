@@ -1,0 +1,59 @@
+//CUSTOM HEADER STYLES
+@use "../scss/custom" as *;
+
+
+
+
+
+.splitter-2 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100px; 
+    background-color: $deepCove;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px; 
+      background-color: $white; 
+      transform: skewY(-3deg);
+      transform-origin: 0; 
+    }
+  }
+
+
+  .footer-m{
+
+    h5{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+  }
+
+  .f-text{
+    font-size: 0.9rem;
+  }
+
+
+  .f1{
+    background-color: $deepCove; 
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height:1.5px; 
+        background: linear-gradient(to right, transparent, #c5c5c579, transparent); 
+        transform: scaleY(1);
+}
+  }
